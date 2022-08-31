@@ -10,7 +10,7 @@ resource "aws_security_group_rule" "rules" {
 
   for_each = var.rules
 
-  description = "${each.key} - ${each.value.description}"
+  description = lookup(each.value, "description", "${each.key}")
   type        = each.value.type
   from_port   = each.value.from_port
   to_port     = each.value.to_port
