@@ -3,7 +3,7 @@
 # Example
 ```Terraform
 module "security_group" {
-  source = "./modules/sg"
+  source = "github.com/agnani/security_group"
 
   vpc_id      = "vpc-3456891033"
   name        = "sg_name"
