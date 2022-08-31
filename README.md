@@ -1,7 +1,7 @@
-# security_group
+# Security_group
 
-#Example
-
+# Example
+```Terraform
 module "security_group" {
   source = "./modules/sg"
 
@@ -30,3 +30,4 @@ module "security_group" {
       Name = "you can pass here any tags just like this one"
   }
 }
+```
